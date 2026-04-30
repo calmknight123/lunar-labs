@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowRight, Code2, Moon, Sparkles, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import BackgroundGrid from "../components/BackgroundGrid";
 
 const stats = [
   { value: "01", label: "Portfolio system" },
@@ -25,6 +26,8 @@ export default function Home() {
   return (
     <div className="overflow-hidden bg-black text-white">
       <section className="relative flex min-h-screen items-center overflow-hidden px-5 pt-28 md:px-8">
+        <BackgroundGrid />
+
         <div className="absolute left-[-120px] top-20 h-80 w-80 rounded-full bg-purple-700/40 blur-3xl" />
 
         <motion.div
